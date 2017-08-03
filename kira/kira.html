@@ -13,15 +13,16 @@
 <script type="text/javascript" src="script.js"></script>
 <form action="" method="post">
 
-    <title>Emlak Vergisi Hesaplama</title>
+    <title>Kira Artışı Hesaplama </title>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <style>
     body {
-        padding-top: 20px;
-       
+        
+      
+
         /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     }
     </style>
@@ -34,8 +35,8 @@
     <![endif]-->
 
 </head>
-
-<body>
+<img src="beyazekira.png" style="width:209px;height:135px; ">
+<body background="building.jpeg" style="background-size: 100% ">
 
    
     <!-- Page Content -->
@@ -47,12 +48,14 @@
                 .row{
 
                     border-style: solid;
-                    margin-top: 60px;
+                    margin-top: 20px;
                     border-color: #1d2345;
+                    background: rgba(255, 255, 255, 0.6) 
+                    
                 
                 }
             </style>
-                <h1>Kira Artışı Hesaplama</h1>
+                <h1>Kira Artışı Hesaplama </h1>
                 <div style="align:center; color:#e84e1b; font-size:20px ; ">  <em></em> 
                 Artış Yapılacak Ay:   
 
@@ -92,24 +95,23 @@
 
 
 
-    <div style= " margin-top: 5px; align: center;color:#1d2345; font-size: 20px "> <em></em> <input type="radio" id="ozelartisorani" name="artis" value="B"  onchange="sum();"  >
+    <div style= " margin-top: 5px; align: center;color:#1d2345; font-size: 20px;margin-right: 60px; "> <em></em> <input type="radio" id="ozelartisorani" name="artis" value="B"  onchange="sum();"  >
 Özel Artış Oranı: %    <input type="text" name="textkiratutari" id="ozelartisoran" size="6"  onkeyup="sum();" ><br> 
 </div> 
 
+<div style="align:center; margin-top: 20px;color:#e84e1b; font-size: 20px ">  Kiralanan: 
+
+                <select id='kiralanan' style="color: #1d2345; font-size: 20px"> 
+                <option selected value='1'>Konut</option>
+                <option value='2'>İş Yeri</option>
+                 </select> 
 
 
 
-<tr>
-<div style="margin-top: 10px;align: center;color: #e84e1b; font-size: 20px; " <em></em> 
-Kiralanan:   <div style="margin-top: 10px;color: #1d2345; font-size: 20px; "><input type="radio" id="konut" name="kiralanan" value="C" onchange="konutartishesapla();">Konut  </div>
-
-<td><div style="margin-top: 10px; color: #1d2345; font-size: 20px;"" ><input  type="radio" id="isyeri" name="kiralanan" value="D" onchange="isyeriartishesapla();"> İş Yeri  </div></td>
-
-</tr>
 
 
 <div style= " margin-top: 20px; align: center; color: #e84e1b; font-size: 20px; "> <em></em>
-Mevcut Kira Tutarı:     <input type="text" name="textkiratutari" id="mevcutkira" size="5" ><br>
+Mevcut Kira Tutarı:     <input type="text" name="textkiratutari" id="mevcutkira" size="5" style="width: 80px; height: 30px;"><br>
 </div>
 
 <div style= " margin-top: 20px; align: center; color: #e84e1b; font-size: 24px;  "> <em></em>
@@ -124,7 +126,7 @@ Yeni Kira Tutarı:     <input type="text" name="sonuc" id="hesapsonuc" size="8" 
 
 
 
-<input type="reset" value="Sıfırla" style="background-color: #1d2345; color: white; font-family: myriad pro; border: 2px; width: 70px; height: 30px;" />
+<input type="reset" value="Sıfırla" style="background-color: #1d2345; color: white; font-family: myriad pro; border: 2px; width:80px; height: 30px;" />
     
       
         <!-- /.row -->
