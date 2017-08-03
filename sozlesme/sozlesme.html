@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head><title>Örnek Kira Sözleşmesi</title></head>
+<style> 
+body {
+    background-image: url("img_newyork3.jpg") ;
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-size : cover;
+   
+}
+</style>
+<body>
+
+<head>
+<link rel="stylesheet" type="text/css" href="sozlesmedesign.css">
+</head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1254">
+
+
+<div class="form-style-5">
+<form id="Sozlesme" action="userInfo.php" method="post">
+<fieldset>
+<legend><td><span class="number">1</span></legend>
+<input type="text"  name="evsahibi" placeholder="Ev Sahibi Adı,Soyadı *"/>
+<legend><td><span class="number">2</span></legend>
+<input type="text"   name="evsahibitc"  placeholder="Ev Sahibi T.C Kimlik *"/>
+
+
+<legend><td><span class="number">3</span></legend>
+<input type="text"  name="evsahibiadres"  placeholder="Ev Sahibinin Adresi *">
+<legend><td><span class="number">4</span></legend>
+<input type="text" name="kiraci"  placeholder="Kiracının Adı,Soyadı *">
+<legend><td><span class="number">5</span></legend>
+<input type="number"  name="kiracitc"  placeholder="Kiracı T.C Kimlik *">
+<legend><td><span class="number">6</span></legend>
+<input type="text"  name="kiraciadres"  placeholder="Kiracının Adresi *">
+<legend><td><span class="number">7</span></legend>
+<select name="kiralananyer" >
+<optgroup label="Kiralanan Yer">
+  <option value="ev">Ev</option>
+  <option value="ofis">Ofis</option>
+</optgroup>
+</select>    
+<legend><td><span class="number">8</span></legend>
+ <select name="odemeduzeni">
+<optgroup label="Ödeme Düzeni">
+  <option value="aylik">Aylık</option>
+  <option value="yillik">Yıllık</option>
+</optgroup>
+</select> 
+<legend><td><span class="number">9</span>Sözleşme Başlangıç Tarihi</legend>
+<input type="date"  name="baslangic"  placeholder="Başlangıç Tarihi *">
+<legend><td><span class="number">10</span>Sözleşme Bitiş Tarihi</legend>
+<input type="date"  name="bitis"  placeholder="Bitiş Tarihi *">
+
+<legend><td><span class="number">11</span></legend>
+<input type="number"  name="kirabedeli" placeholder="Kira Bedeli *"> 
+<legend><td><span class="number">12</span></legend>
+<select name="parabirimi" >
+<optgroup label="Para Birimi">
+  <option value="tl">TL</option>
+  <option value="dolar">Dolar</option>
+  <option value="euro">Euro</option>
+</optgroup>
+</select> 
+
+<legend><td><span class="number">13</span></legend>
+<input type="text"  name="banka"  placeholder="Kiranın Yatacağı Bankanın Adı *">
+<legend><td><span class="number">14</span></legend>
+<input type="text"  name="sube"  placeholder="Kiranın Yatacağı Şubenin Adı*">
+<legend><td><span class="number">15</span></legend>
+<input type="number"  name="subeno"  placeholder="Kiranın Yatacağı Şubenin Numarası *">
+<legend><td><span class="number">16</span></legend>
+<input type="number"  name="iban"  placeholder="IBAN Numarası *">
+<legend><td><span class="number">17</span></legend>
+<input type="number"  name="hesapno"  placeholder="Hesap Numarası *">
+<legend><td><span class="number">18</span></legend>
+<input type="number"  name="teminat"  placeholder="Teminat Bedeli *">
+
+
+<input type="submit" value="Oluşturr" />
+</form>
+
+<span id="result"></span>
+</div>
+
+</body>
+</html>
