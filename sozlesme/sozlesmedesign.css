@@ -68,7 +68,11 @@
     height:35px;
 
 }
+<<<<<<< HEAD
+label {
+=======
 .form-style-5 .number {
+>>>>>>> ba866b1d8fedc2c46310d60fed1cad57794dbe9d
     background: #1d2345;
     color: #fff;
     height: 30px;
@@ -80,9 +84,13 @@
     text-align: center;
     text-shadow: 0 1px 0 rgba(255,255,255,0.2);
     border-radius: 15px 15px 15px 0px;
+<<<<<<< HEAD
+   
+=======
      margin-left: 260px;
      position: relative;
      top: 34px;
+>>>>>>> ba866b1d8fedc2c46310d60fed1cad57794dbe9d
 
 }
 
