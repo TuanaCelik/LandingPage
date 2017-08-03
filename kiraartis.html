@@ -1,0 +1,103 @@
+<html>
+ 
+<body>
+
+<script type="text/javascript" src="script.js"></script>
+
+
+
+ <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1254">
+
+<title>Kira Artış Hesaplama</title>
+<div style="font-family:myriad pro;">
+<form action="" method="post">
+
+<label for="ay"> <div style="align:center; margin-top: 180px;color:#e84e1b; margin-left: 522px;"">  <em></em> 
+Artış Yapılacak Ay:</label>   
+
+        <select id='aylar'>
+   
+    <option value='1'>Ocak</option>
+    <option value='2'>Şubat</option>
+    <option value='3'>Mart</option>
+    <option value='4'>Nisan</option>
+    <option value='5'>Mayıs</option>
+    <option value='6'>Haziran</option>
+    <option selected  value='7'>Temmuz</option>
+   <option value='8'>Ağustos</option> 
+    <option value='9'>Eylül</option>
+    <option value='10'>Ekim</option>
+    <option value='11'>Kasım</option>
+    <option value='12'>Aralık</option> 
+    </select> 
+    
+        <select id='yillar'> 
+  
+    <option selected value='1'>2017</option>
+    <option value='2'>2016</option>
+
+
+    </select> 
+    </div> 
+
+<table>
+<tr>
+<td><label > <div style="margin-top: 25px;align: center;color:#e84e1b;margin-left: 520px " >  <em></em> 
+Kira Artış Oranı:</label> </div> </td>
+
+<form class=demoForm name=myForm>
+<td>
+<div style="margin-top: 25px; color: #1d2345;">
+<input   type="radio" id="artisorani" name="artis" value="A"  >
+Yurt İçi Üretici Fiyat Endeksi (Yİ-ÜFE)</td> </div>
+</tr>
+</table>
+
+<div style= " margin-top: 5px; align: center; margin-left:630px;color:#1d2345; "> <em></em> <input type="radio" id="ozelartisorani" name="artis" value="B"  onchange="sum();"  >
+Özel Artış Oranı: %    <input type="text" name="textkiratutari" id="ozelartisoran" size="4"  onkeyup="sum();" ><br> 
+</div> 
+
+
+<table>
+<tr>
+
+<td><label > <div style="margin-top: 10px;align: center;color: #e84e1b; margin-left: 520px " <em></em> 
+Kiralanan:</label>   </td>
+<td><div style="margin-top: 10px;color: #1d2345;margin-left: 37px"><input type="radio" id="konut" name="kiralanan" value="C" onchange="konutartishesapla();">Konut </td> </div>
+
+<td><div style="margin-top: 10px; color: #1d2345"><input  type="radio" id="isyeri" name="kiralanan" value="D" onchange="isyeriartishesapla();"> İş Yeri  </div></td>
+</tr>
+</table> 
+
+
+<div style= " margin-top: 20px; align: center; color: #e84e1b; margin-left: 522px"> <em></em>
+Mevcut Kira Tutarı:     <input type="text" name="textkiratutari" id="mevcutkira" size="5" ><br>
+</div>
+
+<div style= " margin-top: 20px; align: center; color: #e84e1b; font-size: 24px; margin-left: 522px; "> <em></em>
+Yeni Kira Tutarı:     <output type="text" name="sonuc" id="hesapsonuc" size="8"   style="width: 70px; height: 30px; color: #1d2345 " ><br>
+</div>
+
+ <div style="margin-top: 25px; margin-left: 722px;">
+
+
+
+ <button onclick="buttonact(); "  type="button" class="positive" style="color: white;background-color: #1d2345; border: 2px; font-family: myriad pro; width: 70px; height: 30px" >Hesapla</button>
+
+
+
+<input type="reset" value="Sıfırla" style="background-color: #1d2345; color: white; font-family: myriad pro; border: 2px; width: 70px; height: 30px;" />
+
+
+
+</head>
+
+
+</div>
+</form>
+</div>
+</div> 
+</body> 
+</html>
+ 

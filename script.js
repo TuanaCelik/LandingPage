@@ -3,20 +3,20 @@
  function buttonact(){
  var radio0= document.getElementById("artisorani").checked; 
  var radio1= document.getElementById("ozelartisorani").checked;
- var radio2= document.getElementById("konut").checked;
- var radio3= document.getElementById("isyeri").checked;
+ var radio2= document.getElementById("kiralanan").value;
 
 
 
-  if(radio0 == true && radio2 == true && radio3 == false){
+
+  if(radio0 == true && radio2 == 1 ){
     konutartishesapla();
 
   }
-  else if(radio0 == true && radio3 == true && radio2 == false){
+  else if(radio0 == true && radio2 == 2 ){
     isyeriartishesapla();
   }
 
-else if(radio0 == false && radio1 == true && radio2 == false && radio3 == false){
+else if(radio0 == false && radio1 == true ){
     sum();
 
 }
