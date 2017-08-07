@@ -35,7 +35,7 @@
     <![endif]-->
 
 </head>
-<img src="beyazekira.png" style="width:209px;height:135px; ">
+<img src="../css/resources/beyazekira.png" style="width:209px;height:135px; ">
 <body background="building.jpeg" style="background-size: 100% ">
 
    
@@ -43,6 +43,9 @@
     <div class="container">
 
         <div class="row">
+
+       
+        </script>
             <div class="col-lg-12 text-center">
             <style type="text/css">
                 .row{
@@ -55,6 +58,7 @@
                 
                 }
             </style>
+
                 <h1>Kira Artışı Hesaplama </h1>
                 <div style="align:center; color:#e84e1b; font-size:20px ; ">  <em></em> 
                 Artış Yapılacak Ay:   
@@ -67,8 +71,8 @@
     <option value='4'>Nisan</option>
     <option value='5'>Mayıs</option>
     <option value='6'>Haziran</option>
-    <option selected  value='7'>Temmuz</option>
-   <option value='8'>Ağustos</option> 
+    <option  value='7'>Temmuz</option>
+   <option selected value='8'>Ağustos</option> 
     <option value='9'>Eylül</option>
     <option value='10'>Ekim</option>
     <option value='11'>Kasım</option>
@@ -85,6 +89,28 @@
     </div> 
 
 
+
+<div style="align:center; margin-top: 20px;color:#e84e1b; font-size: 20px ">  Kiralanan: 
+
+            
+<script type="text/javascript">
+
+function yesnoCheck() {
+var lol=document.getElementById('isyeriCheck').checked;
+    if (lol == true) {
+        document.getElementById('isyeri').style.display = 'block';
+    }
+    else document.getElementById('isyeri').style.display = 'none';
+
+}
+
+</script>
+
+
+
+Konut <input type="radio"  name="yesno" id="konutCheck" onclick="javascript:yesnoCheck();" > İş Yeri <input type="radio" name="yesno" id="isyeriCheck" onclick="javascript:yesnoCheck();" style="color: #1d2345"><br>
+    
+
     <td> <div style="align: center;color:#e84e1b;font-size: 20px; margin-top: 10px;" >  <em></em> 
     Kira Artış Oranı:</div> </td>
     <form class=demoForm name=myForm>
@@ -92,30 +118,31 @@
     <div style=" color: #1d2345; font-size: 20px; margin-left: 5px;">
     <input   type="radio" id="artisorani" name="artis" value="A"  >
     Yurt İçi Üretici Fiyat Endeksi (Yİ-ÜFE)</td> </div> 
+    <div id="isyeri" style="display:none; ">
+       
+    <div style=" color: #1d2345; font-size: 20px; ">
+    <input   type="radio" id="tüfe" name="artis" value="B"  >
+    Tüketici Fiyat Endeksi (TÜFE)</td> </div> 
+    <div style=" color: #1d2345; font-size: 20px; ">
+    <input   type="radio" id="ortalama" name="artis" value="C" style="color: #1d2345;"  >
+     TEFE ve Yİ-ÜFE Ortalaması (TEFE/2+ÜFE/2)</td> </div>
+    </div>
 
 
 
-    <div style= " margin-top: 5px; align: center;color:#1d2345; font-size: 20px;margin-right: 60px; "> <em></em> <input type="radio" id="ozelartisorani" name="artis" value="B"  onchange="sum();"  >
-Özel Artış Oranı: %    <input type="text" name="textkiratutari" id="ozelartisoran" size="6"  onkeyup="sum();" ><br> 
+
+
+    <div style= " margin-top: 5px; align: center;color:#1d2345; font-size: 20px; "> <em></em> <input type="radio" id="ozelartisorani" name="artis" value="B"  onchange="sum();"  >
+Özel Artış Oranı: %    <input type="text" name="textkiratutari" id="ozelartisoran" size="8" style="width: 50px; height: 30px;"  onkeyup="sum();" ><br> 
 </div> 
-
-<div style="align:center; margin-top: 20px;color:#e84e1b; font-size: 20px ">  Kiralanan: 
-
-                <select id='kiralanan' style="color: #1d2345; font-size: 20px"> 
-                <option selected value='1'>Konut</option>
-                <option value='2'>İş Yeri</option>
-                 </select> 
-
-
-
 
 
 <div style= " margin-top: 20px; align: center; color: #e84e1b; font-size: 20px; "> <em></em>
-Mevcut Kira Tutarı:     <input type="text" name="textkiratutari" id="mevcutkira" size="5" style="width: 80px; height: 30px;"><br>
+Mevcut Kira Tutarı:     <input type="text" name="textkiratutari" id="mevcutkira" size="5" style="color: #1d2345; width: 100px; height: 30px;"><br>
 </div>
 
 <div style= " margin-top: 20px; align: center; color: #e84e1b; font-size: 24px;  "> <em></em>
-Yeni Kira Tutarı:     <input type="text" name="sonuc" id="hesapsonuc" size="8"   style="width: 70px; height: 30px; color: #1d2345 " ><br>
+Yeni Kira Tutarı:     <input type="text" name="sonuc" id="hesapsonuc" size="8"   style="width: 100px; height: 30px; color: #1d2345 " ><br>
 </div>
 
  <div style="margin-top: 25px; margin-bottom: 40px;">
@@ -123,8 +150,6 @@ Yeni Kira Tutarı:     <input type="text" name="sonuc" id="hesapsonuc" size="8" 
 
 
  <button onclick="buttonact(); "  type="button" class="positive" style="color: white;background-color: #1d2345; border: 2px; font-family: myriad pro; width: 80px; height: 30px" >Hesapla</button>
-
-
 
 <input type="reset" value="Sıfırla" style="background-color: #1d2345; color: white; font-family: myriad pro; border: 2px; width:80px; height: 30px;" />
     
