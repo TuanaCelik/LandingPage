@@ -8,8 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script> 
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">
 
-    <title>e-kira tools</title>
+<!-- Include a polyfill for ES6 Promises (optional) for IE11 and Android browser -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
+    <title>e-kira araçlar</title>
 
      <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1254">
@@ -71,7 +75,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img src="css/resources/beyazekira.png" style="width:209px;height:135px; ">
+                    <img src="css/resources/ekiraaraç.png" style="width:211px;height:79px; ">
                 </div>
             </div>
         </div>
@@ -85,18 +89,24 @@
         <!-- /.row -->
         <div class="row" style="color: #1d2345;">
             <div class="col-sm-3">
+
+               
                 <img class="img-circle img-responsive img-center" src="css/resources/doc.png" alt="">
                 <h2 style = "text-align:center;  ">Sözleşme</h2>
-                <p>These marketing boxes are a great place to put some information. These can contain summaries of what the company does, promotional information, or anything else that is relevant to the company. These will usually be below-the-fold.</p>
+                <p>Konut ya da işyeri kiralarken, kiracı ve gayrimenkul sahibi arasında imzalanması zorunlu olan kira sözleşmenizi örnek taslaklarımızdan doldurabilir, sözleşmenizi hem yazılı olarak hem de bilgisayar ortamında saklayabilirsiniz.</p>
                 <form action="sozlesme/sozlesme.html">
-                <button type="submit"  >Oluştur</button>
+                <button type="submit" style="margin-top: 15px;"  >Oluştur</button>
                 </form>
                 <style type="text/css">
                     button{
                         color: white;
                         background-color: #e84e1b;
                         border-color: #e84e1b;
-                        display: flex; justify-content: center;
+                       display: flex; justify-content: center;
+                       border-radius: 7px;
+                       width: 65px;
+                       height: 38px;
+               
                       
                     }
                 </style>
@@ -107,7 +117,7 @@
             <td><div class="col-sm-3">
                 <img class="img-circle img-responsive img-center" src="css/resources/house.png" alt="">
                 <h2 style = "text-align:center">Emlak Vergisi</h2>
-                <p>These marketing boxes are a great place to put some information. These can contain summaries of what the company does, promotional information, or anything sdffdgfg</p>
+                <p>Konut, arsa gibi taşınamaz mal varlığı için devlete vergi ödenmelidir. Emlak vergisi için her mükellef, farklı oran ve bedellerde vergi ödeyebilmektedir. En güncel verilere göre ödemeniz gereken emlak verginizi buradan kolayca hesaplayabilirsiniz.</p>
                    <form action="emlakvergi/emlak.html">
                 <button type="submit"  >Hesapla</button>
                 </form>
@@ -131,9 +141,9 @@
             <div class="col-sm-3">
                 <img class="img-circle img-responsive img-center" src="css/resources/calculator.png" alt="">
                 <h2 style = "text-align:center">Kira Artış Oranı</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                <p>İş yeri ve konut için her ay değişen kira oranlarına göre yeni kira döneminde yapılacak olan kira zammını (TUİK) verilerinin baz alındığı sistemimizde kolay ve güvenilir bir şekilde hesaplayabilmek için tıklayın.</p>
                    <form action="kira/kira.html">
-                <button type="submit" style="margin-top: 25px" >Hesapla</button>
+                <button type="submit" style="margin-top: 30px" >Hesapla</button>
                 </form>
                 <style type="text/css">
                     button{
@@ -145,7 +155,7 @@
                        border-radius: 7px;
                          margin-left: auto;
                         margin-right: auto;
-                       margin-bottom: 10px;
+                       margin-bottom:  10px;
                         
                     }
 
@@ -157,8 +167,15 @@
                 <img class="img-circle img-responsive img-center" src="css/resources/calendar.png" alt="">
                 <h2 style = "text-align:center">Takvim</h2>
                 <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-            </div>
+                <button onclick="popup()" type="button"  >Tıkla</button>
+                <script type="text/javascript">
+                    function popup(){
+                        swal("Here's a message!", "It's pretty, isn't it?");
+               }
+                </script>     
             
+            </div>
+                
 
         </div>
                 

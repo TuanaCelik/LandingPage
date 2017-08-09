@@ -172,7 +172,7 @@
        var result= parseInt(FirstNumber) + artis;
      }
        if (!isNaN(result)) {
-           document.getElementById('hesapsonuc').value = result + ' TL';
+           document.getElementById('hesapsonuc').value = result ;
        }
    }
 
@@ -241,7 +241,7 @@
        var result= parseInt(FirstNumber) + artis;
      }
        if (!isNaN(result)) {
-           document.getElementById('hesapsonuc').value = result + ' TL';
+           document.getElementById('hesapsonuc').value = result ;
        }
    }
 
@@ -310,6 +310,6 @@
        var result= parseInt(FirstNumber) + artis;
      }
        if (!isNaN(result)) {
-           document.getElementById('hesapsonuc').value = result + ' TL';
+           document.getElementById('hesapsonuc').value = result ;
        }
    }

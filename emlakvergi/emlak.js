@@ -39,6 +39,6 @@
      }
 
        if (!isNaN(artis)) {
-           document.getElementById('vergisonuc').value = artis + ' TL';
+           document.getElementById('vergisonuc').value = artis ;
        }
    }
