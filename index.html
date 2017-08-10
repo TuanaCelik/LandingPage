@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script> 
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css">
+    <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+    <script src="js/sweetalert.js"></script> 
 
 <!-- Include a polyfill for ES6 Promises (optional) for IE11 and Android browser -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
@@ -25,6 +25,7 @@
 
     <!-- Custom CSS -->
     <link href="css/business-frontpage.css" rel="stylesheet">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -88,14 +89,14 @@
 
         <!-- /.row -->
         <div class="row" style="color: #1d2345;">
-            <div class="col-sm-3">
+            <div class="col-sm-3" style="margin-top: 40px;">
 
                
                 <img class="img-circle img-responsive img-center" src="css/resources/doc.png" alt="">
                 <h2 style = "text-align:center;  ">Sözleşme</h2>
-                <p>Konut ya da işyeri kiralarken, kiracı ve gayrimenkul sahibi arasında imzalanması zorunlu olan kira sözleşmenizi örnek taslaklarımızdan doldurabilir, sözleşmenizi hem yazılı olarak hem de bilgisayar ortamında saklayabilirsiniz.</p>
-                <form action="sozlesme/sozlesme.html">
-                <button type="submit" style="margin-top: 15px;"  >Oluştur</button>
+                <p style="text-align: center;">Konut ya da işyeri kiralarken, kiracı ve gayrimenkul sahibi arasında imzalanması zorunlu olan kira sözleşmenizi örnek taslaklarımızdan doldurabilir, sözleşmenizi hem yazılı olarak hem de bilgisayar ortamında saklayabilirsiniz.</p>
+                <!-- <form action="sozlesme/sozlesme.html"> -->
+                <button onclick="popup()" type="confirm" style="margin-top: 13px;"  >Oluştur</button>
                 </form>
                 <style type="text/css">
                     button{
@@ -104,20 +105,25 @@
                         border-color: #e84e1b;
                        display: flex; justify-content: center;
                        border-radius: 7px;
-                       width: 65px;
+                       width: 85px;
                        height: 38px;
                
                       
                     }
                 </style>
+                <script type="text/javascript">
+                    function popup(){
+                        swal("ÜZGÜNÜZ!", "Bu modül geliştirme aşamasındadır", "error")
+                }
+                </script>   
 
             </div>
                
               
-            <td><div class="col-sm-3">
+            <td><div class="col-sm-3" style="margin-top: 40px;">
                 <img class="img-circle img-responsive img-center" src="css/resources/house.png" alt="">
                 <h2 style = "text-align:center">Emlak Vergisi</h2>
-                <p>Konut, arsa gibi taşınamaz mal varlığı için devlete vergi ödenmelidir. Emlak vergisi için her mükellef, farklı oran ve bedellerde vergi ödeyebilmektedir. En güncel verilere göre ödemeniz gereken emlak verginizi buradan kolayca hesaplayabilirsiniz.</p>
+                <p style="text-align: center;">Konut, arsa gibi taşınamaz mal varlığı için devlete vergi ödenmelidir. Emlak vergisi için her mükellef, farklı oran ve bedellerde vergi ödeyebilmektedir. En güncel verilere göre ödemeniz gereken emlak verginizi buradan kolayca hesaplayabilirsiniz.</p>
                    <form action="emlakvergi/emlak.html">
                 <button type="submit"  >Hesapla</button>
                 </form>
@@ -128,7 +134,7 @@
                         border-color: #e84e1b;
                        display: flex; justify-content: center;
                        border-radius: 7px;
-                       width: 65px;
+                       width: 85px;
                        height: 38px;
                
                         
@@ -138,10 +144,10 @@
             </div>
            
         
-            <div class="col-sm-3">
+            <div class="col-sm-3" style="margin-top: 40px;">
                 <img class="img-circle img-responsive img-center" src="css/resources/calculator.png" alt="">
                 <h2 style = "text-align:center">Kira Artış Oranı</h2>
-                <p>İş yeri ve konut için her ay değişen kira oranlarına göre yeni kira döneminde yapılacak olan kira zammını (TUİK) verilerinin baz alındığı sistemimizde kolay ve güvenilir bir şekilde hesaplayabilmek için tıklayın.</p>
+                <p style="text-align: center;">İş yeri ve konut için her ay değişen kira oranlarına göre yeni kira döneminde yapılacak olan kira zammını (TUİK) verilerinin baz alındığı sistemimizde kolay ve güvenilir bir şekilde hesaplayabilmek için tıklayın.</p>
                    <form action="kira/kira.html">
                 <button type="submit" style="margin-top: 30px" >Hesapla</button>
                 </form>
@@ -155,7 +161,7 @@
                        border-radius: 7px;
                          margin-left: auto;
                         margin-right: auto;
-                       margin-bottom:  10px;
+                       margin-bottom:  45px;
                         
                     }
 
@@ -163,15 +169,23 @@
                     </style>
             </div>
 
-            <div class="col-sm-3">
+            <div class="col-sm-3" style="margin-top: 40px;">
                 <img class="img-circle img-responsive img-center" src="css/resources/calendar.png" alt="">
                 <h2 style = "text-align:center">Takvim</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                <button onclick="popup()" type="button"  >Tıkla</button>
+                <p style="text-align: center;">E-mail adresiniz ile giriş yapabileceğiniz hatırlatıcı takvim sistemimizden kira,aidat ve fatura ödemelerinizin tarihi yaklaşırken uyarıcı mail alabilmek için,son ödeme tarihlerini girmeniz yeterli!</p>
+                <button onclick="popup()" type="confirm " style="margin-top: 30px;" >Takvime Git</button>
+                 <style type="text/css">
+                    button.confirm{
+                        width: 100px;
+                       height: 38px;
+               
+                        
+                    }
+                </style>
                 <script type="text/javascript">
                     function popup(){
-                        swal("Here's a message!", "It's pretty, isn't it?");
-               }
+                        swal("ÜZGÜNÜZ!", "Bu modül geliştirme aşamasındadır", "error")
+                }
                 </script>     
             
             </div>
