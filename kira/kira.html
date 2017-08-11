@@ -3,6 +3,7 @@
 
 <head>
 <div style="font-family:myriad pro;">
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,7 +17,6 @@
     <title>Kira Artışı Hesaplama </title>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom CSS -->
     <style>
     body {
@@ -44,15 +44,28 @@
 
         <div class="row">
           <!-- <form href="../index.html"> -->
-                <button onclick="goBack()" style="margin-top: 30px" >Geri</button>
-                <!-- </form> -->
-        <script>
+        <button onclick="goBack()" class="back" >Ana Sayfaya Dön</button>
+        <!-- </form> -->
+        <style type="text/css">
+            button.back{
+                color: white;
+                background-color: #e84e1b;
+                border-color: #e84e1b;
+              /* display: flex; justify-content: center;
+               border-radius: 7px;
+               width: 85px;
+               height: 38px;
+       */
+              
+            }
+        </style>    
+        <script type="text/javascript">
             function goBack() {
                 window.history.back();
             }
         </script>
                 
-        </script>
+       <!--  </script> -->
             <div class="col-lg-12 text-center">
             <style type="text/css">
 
