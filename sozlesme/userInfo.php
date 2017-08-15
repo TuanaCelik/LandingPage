@@ -1,24 +1,24 @@
 <?php
 	include_once('DB.php');
 	
-	$evsahibi   = $_POST['evsahibi'];
-	$evsahibitc = $_POST['evsahibitc'];
-	$evsahibiadres= $_POST['evsahibiadres'];
-	$kiraci= $_POST['kiraci'];
-	$kiracitc= $_POST['kiracitc'];
-	$kiraciadres= $_POST['kiraciadres'];
-	$kiralananyer= $_POST['kiralananyer'];
-	$odemeduzeni= $_POST['odemeduzeni'];
-	$baslangic= $_POST['baslangic'];
-	$bitis= $_POST['bitis'];
-	$kirabedeli= $_POST['kirabedeli'];
-	$parabirimi= $_POST['parabirimi'];
-	$banka= $_POST['banka'];
-	$sube= $_POST['sube'];
-	$subeno= $_POST['subeno'];
-	$iban= $_POST['iban'];
-	$hesapno= $_POST['hesapno'];
-	$teminat= $_POST['teminat'];
+	$evsahibi   = $_GET['evsahibi'];
+	$evsahibitc = $_GET['evsahibitc'];
+	$evsahibiadres= $_GET['evsahibiadres'];
+	$kiraci= $_GET['kiraci'];
+	$kiracitc= $_GET['kiracitc'];
+	$kiraciadres= $_GET['kiraciadres'];
+	$kiralananyer= $_GET['kiralananyer'];
+	$odemeduzeni= $_GET['odemeduzeni'];
+	$baslangic= $_GET['baslangic'];
+	$bitis= $_GET['bitis'];
+	$kirabedeli= $_GET['kirabedeli'];
+	$parabirimi= $_GET['parabirimi'];
+	$banka= $_GET['banka'];
+	$sube= $_GET['sube'];
+	$subeno= $_GET['subeno'];
+	$iban= $_GET['iban'];
+	$hesapno= $_GET['hesapno'];
+	$teminat= $_GET['teminat'];
 	
 	        $myfile = fopen("sozlesme.doc", "w") or die("Unable to open file!");
 	        $txt="KİRA SÖZLEŞMESİ \n\n\n\n";
@@ -184,7 +184,7 @@ h2 {
 <h2>Sözleşmen Hazır</h2>
 
 
-<form id="Sozlesme" action="sonuc.php" method="post">
+<form id="Sozlesme" action="sonuc.php" method="GET">
 
 
 
