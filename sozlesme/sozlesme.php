@@ -11,7 +11,7 @@
      <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1254">
 <!-- <script type="text/javascript" src="script.js"></script> -->
-<!-- <form id="Sozlesme" action="userInfo.php" method="get"> -->
+<!-- <form id="Sozlesme" action="/userInfo.php" method="post"> -->
 
     <title>Online Kira Sözleşmesi </title>
     <!-- Bootstrap Core CSS -->
@@ -54,9 +54,9 @@
                 }
             </style>
 
+<form id="Sozlesme" action="userInfo.php" method="POST">
 <fieldset>
 
-<form id="Sozlesme" action="userInfo.php" method="get">
 <label for="evsahibi">1</label>
 <input type="text" name="evsahibi" placeholder="Ev Sahibi Adı,Soyadı *"/><br><br>
 <label for="evsahibitc">2</label>
