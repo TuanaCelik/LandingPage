@@ -184,7 +184,7 @@ h2 {
 <h2>Sözleşmen Hazır</h2>
 
 
-<form id="Sozlesme" action="sonuc.php" method="post">
+<form id="Sozlesme" action="sonuc.php" method="POST">
 
 
 
