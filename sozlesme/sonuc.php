@@ -5,6 +5,4 @@
 			header("Access-Control-Allow-Origin: *");
 			readfile('sozlesme.doc');
 			
-
-
 ?>
