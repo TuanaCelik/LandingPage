@@ -5,6 +5,4 @@
 			header('Content-type: application/doc');
 			readfile('sozlesme.doc');
 			
-
-
 ?>
