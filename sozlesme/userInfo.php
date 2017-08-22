@@ -4,9 +4,11 @@
 	$evsahibi   = $_POST['evsahibi'];
 	$evsahibitc = $_POST['evsahibitc'];
 	$evsahibiadres= $_POST['evsahibiadres'];
+	$evsahibimail= $_POST['evsahibimail'];
 	$kiraci= $_POST['kiraci'];
 	$kiracitc= $_POST['kiracitc'];
 	$kiraciadres= $_POST['kiraciadres'];
+	$kiracimail= $_POST['kiracimail'];
 	$kiralananyer= $_POST['kiralananyer'];
 	$odemeduzeni= $_POST['odemeduzeni'];
 	$baslangic= $_POST['baslangic'];

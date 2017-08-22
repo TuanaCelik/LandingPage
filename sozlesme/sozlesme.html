@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
 <div style="font-family:myriad pro;">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -58,61 +59,66 @@
 
 <form id="Sozlesme" action="userInfo.php" method="post">
 <label for="evsahibi">1</label>
-<input type="text" name="evsahibi" placeholder="Ev Sahibi Adı,Soyadı *"/><br><br>
+
+<input type="text" name="evsahibi" placeholder="Ev Sahibi Adı,Soyadı *"  required="required"/><br><br>
 <label for="evsahibitc">2</label>
-<input type="text" name="evsahibitc"  placeholder="Ev Sahibi T.C Kimlik *"/><br><br>
+<input type="text" name="evsahibitc"  placeholder="Ev Sahibi T.C Kimlik *"  required="required"/><br><br>
 <label for="evsahibiadres">3</label>
-<input type="text" name="evsahibiadres"  placeholder="Ev Sahibinin Adresi *"><br><br>
-<label for="kiraci">4</label>
-<input type="text" name="kiraci"  placeholder="Kiracının Adı,Soyadı *"><br><br>
-<label for="kiracitc">5</label>
-<input type="number" name="kiracitc"  placeholder="Kiracı T.C Kimlik *"><br><br>
-<label for="kiraciadres">6</label>
-<input type="text" name="kiraciadres"  placeholder="Kiracının Adresi *"><br><br>
-<label for="kiralananyer">7</label>
+<input type="text" name="evsahibiadres"  placeholder="Ev Sahibinin Adresi *" required="required" ><br><br>
+<label for="evsahibimail">4</label>
+<input type="email" name="evsahibimail"  placeholder="Ev Sahibinin Mail Adresi *" required="required" ><br><br>
+<label for="kiraci">5</label>
+<input type="text" name="kiraci"  placeholder="Kiracının Adı,Soyadı *" required="required"><br><br>
+<label for="kiracitc">6</label>
+<input type="number" name="kiracitc"  placeholder="Kiracı T.C Kimlik *" required="required"><br><br>
+<label for="kiraciadres">7</label>
+<input type="text" name="kiraciadres"  placeholder="Kiracının Adresi *" required="required"><br><br>
+<label for="kiracimail">8</label>
+<input type="email" name="kiracimail"  placeholder="Kiracının Mail Adresi *" required="required"><br><br>
+<label for="kiralananyer">9</label>
 <select name="kiralananyer" >
-<optgroup label="Kiralanan Yer">
+<optgroup label="Kiralanan Yer" required="required">
   <option value="ev">Ev</option>
   <option value="ofis">Ofis</option>
 </optgroup>
 </select>    <br><br>
-<label for="odemeduzeni">8</label>
+<label for="odemeduzeni" >10</label>
  <select name="odemeduzeni">
-<optgroup label="Ödeme Düzeni">
+<optgroup label="Ödeme Düzeni" required="required">
   <option value="aylik">Aylık</option>
   <option value="yillik">Yıllık</option>
 </optgroup>
 </select> <br><br>
 <div style=" font-size: 25px;">Sözleşme Başlangıç Tarihi</div> 
-<label for="baslangic">9</label>
-<input type="date" name="baslangic"  placeholder="Başlangıç Tarihi *"><br><br>
+<label for="baslangic">11</label>
+<input type="date" name="baslangic"  placeholder="Başlangıç Tarihi *" required="required"><br><br>
 <div style=" font-size: 25px;" >Sözleşme Bitiş Tarihi</div>
-<label for="bitis">10</label>
-<input type="date"  name="bitis"  placeholder="Bitiş Tarihi *"><br><br>
+<label for="bitis">12</label>
+<input type="date"  name="bitis"  placeholder="Bitiş Tarihi *" required="required"><br><br>
 
-<label for="kirabedeli">11</label>
-<input type="number"  name="kirabedeli" placeholder="Kira Bedeli *"> <br><br>
-<label for="parabirimi">12</label>
+<label for="kirabedeli">13</label>
+<input type="number"  name="kirabedeli" placeholder="Kira Bedeli *" required="required"> <br><br>
+<label for="parabirimi">14</label>
 <select name="parabirimi" >
-<optgroup label="Para Birimi">
+<optgroup label="Para Birimi" required="required">
   <option value="tl">TL</option>
   <option value="dolar">Dolar</option>
   <option value="euro">Euro</option>
 </optgroup>
 </select> <br><br>
 
-<label for="banka">13</label>
-<input type="text" name="banka"  placeholder="Kiranın Yatacağı Bankanın Adı *"><br><br>
-<label for="sube">14</label>
-<input type="text" name="sube"  placeholder="Kiranın Yatacağı Şubenin Adı*"><br><br>
-<label for="subeno">15</label>
-<input type="number" name="subeno"  placeholder="Kiranın Yatacağı Şubenin Numarası *"><br><br>
-<label for="iban">16</label>
-<input type="number" name="iban"  placeholder="IBAN Numarası *"><br><br>
-<label for="hesapno">17</label>
-<input type="number" name="hesapno"  placeholder="Hesap Numarası *"><br><br>
-<label for="teminat">18</label>
-<input type="number" name="teminat"  placeholder="Teminat Bedeli *"><br><br>
+<label for="banka">15</label>
+<input type="text" name="banka"  placeholder="Kiranın Yatacağı Bankanın Adı *" required="required"><br><br>
+<label for="sube">16</label>
+<input type="text" name="sube"  placeholder="Kiranın Yatacağı Şubenin Adı*" required="required"><br><br>
+<label for="subeno">17</label>
+<input type="number" name="subeno"  placeholder="Kiranın Yatacağı Şubenin Numarası *" required="required"><br><br>
+<label for="iban">18</label>
+<input type="number" name="iban"  placeholder="IBAN Numarası *" required="required"><br><br>
+<label for="hesapno">19</label>
+<input type="number" name="hesapno"  placeholder="Hesap Numarası *" required="required"><br><br>
+<label for="teminat">20</label>
+<input type="number" name="teminat"  placeholder="Teminat Bedeli *" required="required"><br><br>
 
 
 <input type="submit" style="color: white; background-color: #e84e1b; border-color: #e84e1b" value="Oluştur" />
