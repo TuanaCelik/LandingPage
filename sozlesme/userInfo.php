@@ -126,7 +126,7 @@ KİRACI	                                                                        
 	        fclose($myfile);
 						
 			
-	if(mysqli_query($conn,"INSERT INTO sozlesme(evsahibi,evsahibitc,evsahibiadres,kiraci,kiracitc,kiraciadres,kiralananyer,odemeduzeni,baslangic,bitis,kirabedeli,parabirimi,banka,sube,subeno,iban,hesapno,teminat) VALUES ('$evsahibi', '$evsahibitc','$evsahibiadres','$kiraci','$kiracitc','$kiraciadres','$kiralananyer','$odemeduzeni','$baslangic','$bitis','$kirabedeli','$parabirimi','$banka','$sube','$subeno','$iban','$hesapno','$teminat')"))
+   if(mysqli_query($conn,"INSERT INTO sozlesme(evsahibi,evsahibitc,evsahibiadres,evsahibimail,kiraci,kiracitc,kiraciadres,kiracimail,kiralananyer,odemeduzeni,baslangic,bitis,kirabedeli,parabirimi,banka,sube,subeno,iban,hesapno,teminat) VALUES ('$evsahibi', '$evsahibitc','$evsahibiadres','$evsahibimail','$kiraci','$kiracitc','$kiraciadres','$kiracimail',$kiralananyer','$odemeduzeni','$baslangic','$bitis','$kirabedeli','$parabirimi','$banka','$sube','$subeno','$iban','$hesapno','$teminat')"))
 	   
 	        echo "Success";
 				   
