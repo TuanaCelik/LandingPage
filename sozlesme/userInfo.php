@@ -22,7 +22,7 @@
 	$hesapno= $_POST['hesapno'];
 	$teminat= $_POST['teminat'];
 	
-	        $myfile = fopen("sozlesme.doc", "w") or die("Unable to open file!");
+	        $myfile = fopen("sozlesme.doc", "w") or die("");
 	        $txt="KİRA SÖZLEŞMESİ \n\n\n\n";
 			fwrite($myfile, $txt);
 			$txt="Kiraya Veren          : ";
@@ -128,7 +128,7 @@ KİRACI	                                                                        
 			
    			if(mysqli_query($conn,"INSERT INTO sozlesme(evsahibi,evsahibitc,evsahibiadres,evsahibimail,kiraci,kiracitc,kiraciadres,kiracimail,kiralananyer,odemeduzeni,baslangic,bitis,kirabedeli,parabirimi,banka,sube,subeno,iban,hesapno,teminat) VALUES ('$evsahibi', '$evsahibitc','$evsahibiadres','$evsahibimail','$kiraci','$kiracitc','$kiraciadres','$kiracimail','$kiralananyer','$odemeduzeni','$baslangic','$bitis','$kirabedeli','$parabirimi','$banka','$sube','$subeno','$iban','$hesapno','$teminat')"))
 	   
-	        echo "Success";
+	        echo "";
 				   
 	else
 	    echo "Insertiıon Failed" ;
@@ -136,64 +136,54 @@ KİRACI	                                                                        
 ?>
 
 
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<title>Sozlesme Hazir</title>
-<style> 
-body {
-    background-image: url("img_istanbul3.jpg") ;
-    background-repeat: no-repeat;
-    background-size:cover;
-}
-</style>
-<style>
-.button {
-  display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #e84e1b;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 2px #999;
+<div style="font-family:myriad pro;">
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+     <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1254">
+<script type="text/javascript" src="script.js"></script>
+<form action="" method="post">
 
-}
+    <title>Kira Artışı Hesaplama </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-.button:hover {background-color: #1d2345}
 
-.button:active {
-  background-color: #1d2345;
-  box-shadow: 0 0px #666;
-  transform: translateY(4px);
    
-}
-</style>
 </head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<body>
-<style>
-h2 {
-    text-align: center;
-	color: #FFFFFF;
-}
+<body background="img_newyork.gif" style="background-size: 100% ">
+<img src="../css/resources/ekiraaraç.png" style="width:211px;height:79px; ">
 
-</style>
-<h2>Sözleşmen Hazır</h2>
+  
+    <div class="container">
 
+        <div class="row">
+      
+            <div class="col-lg-12 text-center" style="text-align: center;font-family: myriad pro; font-size: 23px; margin-top: 50px;">
+            <style type="text/css">
 
-<form id="Sozlesme" action="sonuc.php" method="POST">
+                .row{
 
+                    border-style: solid;
+                    margin-top: 20px;
+                    height: 120px;
+                    border-color: #1d2345;
+                    background: rgba(255, 255, 255, 0.6) 
+                    
+                
+                }
+            </style>
 
+     Sözleşmeniz kiracı ve ev sahibinin email adreslerine gönderilecektir...
+      
 
-<div class="w3-center">
-<div class="w3-bar">
-<button class="button">Sözleşmeyi İndir</button>
-</div>
-</div>
 </body>
+
 </html>
