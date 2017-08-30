@@ -41,11 +41,14 @@
    
     <!-- Page Content -->
     <div class="container">
-
+<form id="Sozlesme" action="userInfo.php" method="post">
         <div class="row">
             <div class="col-lg-12 text-center">
-                 <style type="text/css">
-                .row{
+               
+<div class="row" style="color: #1d2345; text-align: center;">
+            <div class="col-sm-12" style="margin-top: 40px;">
+  <style type="text/css">
+                .col-sm-12{
 
                     border-style: solid;
                     border-color: #1d2345;
@@ -53,48 +56,58 @@
 
                 }
             </style>
-
-<fieldset>
-
-<form id="Sozlesme" action="userInfo.php" method="post">
-<label for="evsahibi">1</label>
-
-<input type="text" name="evsahibi" placeholder="Ev Sahibi Adı,Soyadı *"  required="required"/><br><br>
-<label for="evsahibitc">2</label>
+<h2>Ev Sahibi Bilgileri</h2>
+<label for="evsahibi" >1</label>
+<input  type="text" name="evsahibi" placeholder="Ev Sahibi Adı,Soyadı *"  required="required"/> <label for="evsahibitc">2</label>
 <input type="text" name="evsahibitc"  placeholder="Ev Sahibi T.C Kimlik *"  required="required"/><br><br>
 <label for="evsahibiadres">3</label>
-<input type="text" name="evsahibiadres"  placeholder="Ev Sahibinin Adresi *" required="required" ><br><br>
+<input type="text" name="evsahibiadres"  placeholder="Ev Sahibinin Adresi *" required="required" >
 <label for="evsahibimail">4</label>
 <input type="email" name="evsahibimail"  placeholder="Ev Sahibinin Mail Adresi *" required="required" ><br><br>
+</div>
+</div>
+<div class="row" style="color: #1d2345;">
+<div class="col-sm-12" style="margin-top: 10px;">
+<h2>Kiracı Bilgileri</h2>
 <label for="kiraci">5</label>
-<input type="text" name="kiraci"  placeholder="Kiracının Adı,Soyadı *" required="required"><br><br>
+<input type="text" name="kiraci"  placeholder="Kiracının Adı,Soyadı *" required="required">
 <label for="kiracitc">6</label>
 <input type="number" name="kiracitc"  placeholder="Kiracı T.C Kimlik *" required="required"><br><br>
 <label for="kiraciadres">7</label>
-<input type="text" name="kiraciadres"  placeholder="Kiracının Adresi *" required="required"><br><br>
+<input type="text" name="kiraciadres"  placeholder="Kiracının Adresi *" required="required">
 <label for="kiracimail">8</label>
 <input type="email" name="kiracimail"  placeholder="Kiracının Mail Adresi *" required="required"><br><br>
-<label for="kiralananyer">9</label>
+</div>
+</div>
+<div class="row" style="color: #1d2345; ">
+<div class="col-sm-12" style="margin-top: 10px;">
+
+<h2>Kira Bilgileri</h2>
+<label for="baslangic">9</label>
+<input type="date" name="baslangic"  placeholder="Başlangıç Tarihi *" required="required">
+
+<label for="bitis">10</label>
+<input type="date"  name="bitis"  placeholder="Bitiş Tarihi *" required="required"><br><br>
+<label for="kiralananyer">11</label>
 <select name="kiralananyer" >
 <optgroup label="Kiralanan Yer" required="required">
   <option value="ev">Ev</option>
   <option value="ofis">Ofis</option>
 </optgroup>
 </select>    <br><br>
-<label for="odemeduzeni" >10</label>
+</div>
+</div>
+<div class="row" style="color: #1d2345;">
+<div class="col-sm-12" style="margin-top: 10px;">
+
+<h2>Ödeme Bilgileri</h2>
+<label for="odemeduzeni" >12</label>
  <select name="odemeduzeni">
 <optgroup label="Ödeme Düzeni" required="required">
   <option value="aylik">Aylık</option>
   <option value="yillik">Yıllık</option>
 </optgroup>
-</select> <br><br>
-<div style=" font-size: 25px;">Sözleşme Başlangıç Tarihi</div> 
-<label for="baslangic">11</label>
-<input type="date" name="baslangic"  placeholder="Başlangıç Tarihi *" required="required"><br><br>
-<div style=" font-size: 25px;" >Sözleşme Bitiş Tarihi</div>
-<label for="bitis">12</label>
-<input type="date"  name="bitis"  placeholder="Bitiş Tarihi *" required="required"><br><br>
-
+</select> 
 <label for="kirabedeli">13</label>
 <input type="number"  name="kirabedeli" placeholder="Kira Bedeli *" required="required"> <br><br>
 <label for="parabirimi">14</label>
@@ -104,23 +117,27 @@
   <option value="dolar">Dolar</option>
   <option value="euro">Euro</option>
 </optgroup>
-</select> <br><br>
+</select> 
 
 <label for="banka">15</label>
 <input type="text" name="banka"  placeholder="Kiranın Yatacağı Bankanın Adı *" required="required"><br><br>
 <label for="sube">16</label>
-<input type="text" name="sube"  placeholder="Kiranın Yatacağı Şubenin Adı*" required="required"><br><br>
+<input type="text" name="sube"  placeholder="Kiranın Yatacağı Şubenin Adı*" required="required">
 <label for="subeno">17</label>
 <input type="number" name="subeno"  placeholder="Kiranın Yatacağı Şubenin Numarası *" required="required"><br><br>
 <label for="iban">18</label>
-<input type="number" name="iban"  placeholder="IBAN Numarası *" required="required"><br><br>
+<input type="number" name="iban"  placeholder="IBAN Numarası *" required="required">
 <label for="hesapno">19</label>
 <input type="number" name="hesapno"  placeholder="Hesap Numarası *" required="required"><br><br>
+<div style="margin-right: 350px">
 <label for="teminat">20</label>
 <input type="number" name="teminat"  placeholder="Teminat Bedeli *" required="required"><br><br>
+</div>
+</div>
+</div>            
 
 
-<input type="submit" style="color: white; background-color: #e84e1b; border-color: #e84e1b" value="Oluştur" />
+<input type="submit" style="color: white; background-color: #e84e1b; border-color: #e84e1b; margin-bottom: 10px;" value="Oluştur" />
 
 <style type="text/css">
     input{
